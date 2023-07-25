@@ -186,7 +186,7 @@ if (self !== top) {
 				</li>
 					<li>
 			<div class="top-nav-vm-btn">
-				<a class="btn btn-orange pull-left" href="https://localhost:4343/videomaker">Make a Video</a>
+				<a class="btn btn-orange pull-left" href="https://localhost:4343/create">Make a Video</a>
 			</div>
 		</li></ul>
 			
