@@ -29,7 +29,7 @@ pause && exit
 :: Post-Initialization ::
 :::::::::::::::::::::::::
 
-title Wrapper: Offline Updater
+title GoAnimate 2014 Updater
 
 if not exist .git ( goto nogit )
 :yesgit

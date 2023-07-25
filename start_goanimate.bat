@@ -1,8 +1,8 @@
 :: GoAnimate 2014 Launcher
 :: Author: SimplyA_Coder
 :: License: MIT
-set WRAPPER_VER=1.3.0
-title GoAnimate 2014 v%WRAPPER_VER% [Initializing...]
+set GA_VER=1.3.0
+title GoAnimate 2014 v%GA_VER% [Initializing...]
 
 ::::::::::::::::::::
 :: Initialization ::
@@ -43,7 +43,7 @@ if not exist server ( goto error_location )
 :: Welcome, Director Ford!
 echo GoAnimate 2014
 echo A Legacy Video Maker with the old GoAnimate from 2014, built on Flash Player and NodeJS.
-echo Version !WRAPPER_VER!
+echo Version !GA_VER!
 echo:
 
 :: Confirm measurements to proceed.
@@ -91,7 +91,7 @@ if !AUTOUPDATE!==y (
 :: Starting GoAnimate ::
 ::::::::::::::::::::::
 
-title GoAnimate 2014 v!WRAPPER_VER! [Loading...]
+title GoAnimate 2014 v!GA_VER! [Loading...]
 
 :: Close existing node apps
 :: Hopefully fixes EADDRINUSE errors??
@@ -148,14 +148,14 @@ echo GoAnimate 2014 has been started! Your dashboard should now be open.
 :: Post-Start ::
 ::::::::::::::::
 
-title GoAnimate 2014 v!WRAPPER_VER!
+title GoAnimate 2014 v!GA_VER!
 if !VERBOSEWRAPPER!==y ( goto wrapperstarted )
 :wrapperstartedcls
 cls
 :wrapperstarted
 
 echo:
-echo GoAnimate 2014 v!WRAPPER_VER! running
+echo GoAnimate 2014 v!GA_VER! running
 echo A Legacy Video Maker with the old GoAnimate from 2014, built on Flash Player and NodeJS.
 echo:
 if !VERBOSEWRAPPER!==n ( echo DON'T CLOSE THIS WINDOW^^! Use the quit option ^(0^) when you're done. )
@@ -250,7 +250,7 @@ echo You must answer Yes or No. && goto exitwrapperretry
 
 :point_extraction
 
-title GoAnimate 2014 v!WRAPPER_VER! [Shutting down...]
+title GoAnimate 2014 v!GA_VER! [Shutting down...]
 
 :: Shut down Node.js
 if !VERBOSEWRAPPER!==y (
@@ -271,7 +271,7 @@ if !DRYRUN!==y ( echo Go wet your run next time. )
 pause & exit
 
 :exitwithstyle
-title GoAnimate 2014 v!WRAPPER_VER! [Shutting down... WITH STYLE]
+title GoAnimate 2014 v!GA_VER! [Shutting down... WITH STYLE]
 echo Shutting down GoAnimate 2014...
 PING -n 3 127.0.0.1>nul
 color 9b
