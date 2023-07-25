@@ -166,7 +166,7 @@ if "!choice!"=="?1" (
 :: Browser settings
 if "!choice!"=="2" goto browsertype
 if "!choice!"=="?2" (
-	echo When set to included Chromium, it opens a browser that comes with GoAnimaet 2014.
+	echo When set to included Chromium, it opens a browser that comes with GoAnimate 2014.
 	echo This older browser will keep running Flash after new browsers block it completely.
 	echo If you don't want to use it, you can use your default browser, or a specific executable.
 	echo Default setting is included Chromium. Most should probably keep that default.
