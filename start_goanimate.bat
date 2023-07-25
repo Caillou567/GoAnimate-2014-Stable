@@ -2,7 +2,7 @@
 :: Author: SimplyA_Coder
 :: License: MIT
 set WRAPPER_VER=1.3.0
-title Wrapper: Offline v%WRAPPER_VER% [Initializing...]
+title GoAnimate 2014 v%WRAPPER_VER% [Initializing...]
 
 ::::::::::::::::::::
 :: Initialization ::
