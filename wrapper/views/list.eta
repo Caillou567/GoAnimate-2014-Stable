@@ -66,16 +66,16 @@
 						</td>
 						<td>
 							<div>${title}</div>
-							<div>${tbl.duration}</div>
+							<div>${tbl.durationString}</div>
 						</td>
 						<td>
 							<span>${date}, ${time}</span>
 						</td>
 						<td>
-							<a href="javascript:;" onclick="popup('${tbl.id}', 'player')"></a>
+							<a href="javascript:;" onclick="popup('${tbl.id}')"></a>
 							<a href="/go_full?movieId=${tbl.id}"></a>
 							<a href="/file/movie/file/${tbl.id}" download="${tbl.title}.zip"></a>
-							<a href="#" onclick="destructive('${tbl.id}', 'clone')"></a>
+							<a href="#" onclick="destructive('${tbl.id}', 'repair')"></a>
 							<a href="#" onclick="destructive('${tbl.id}', 'delete')"></a>
 						</td>
 					</tr>`.trim()
@@ -87,7 +87,7 @@
 		loadMore.onclick = loadRows;
 
 
-		$.get("/api/movies/list", data => {
+		$.get("/movieList", data => {
 			json = data;
 			loadRows();
 		});
@@ -110,8 +110,8 @@
 				});
 		}
 
-		function popup(id, path) {
-			window.open('/${path}?movieId=${id}' + id, 'Loading your Video... - GoAnimate', 'width=1280,height=720,left=' + (screen.width / 2 - 640) +
+		function popup(id) {
+			window.open('/player?movieId=' + id, 'MsgWindow', 'width=1280,height=720,left=' + (screen.width / 2 - 640) +
 				',top=' + (screen.height / 2 - 360));
 		}
 
