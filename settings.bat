@@ -28,8 +28,6 @@ if "!SUBSCRIPT!"=="" (
 )
 :point_insertion
 
-:: patch detection
-if exist "patch.jpg" echo MESSAGE GOES HERE && goto end
 
 :: Preload variable
 set CFG=utilities\config.bat
