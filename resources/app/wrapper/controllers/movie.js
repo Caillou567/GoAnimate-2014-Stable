@@ -55,7 +55,7 @@ group
 	.route("*", /\/videomaker\/full\/(\w+)\/tutorial$/, (req, res) => {
 		const theme = req.matches[1];
 
-		res.redirect(`/go_full?tray=${theme}&tutorial=0`);
+		res.redirect(`/videomaker_full?tray=${theme}&tutorial=0`);
 	})
 
 	// redirect

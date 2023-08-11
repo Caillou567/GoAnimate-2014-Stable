@@ -55,8 +55,6 @@ function name2Font(font) {
 			return "FontFileLOne";
 		case "Telex Regular":
 			return "FontFileTelex";
-		case "Open Sans":
-			return "FontFileOpenSans";
 		case "":
 		case null:
 			return '';

@@ -129,7 +129,7 @@ group
 			object: toObjectString
 		});
 	})
-	.route("GET", "/go_full", async (req, res) => {
+	.route("GET", "/videomaker_full", async (req, res) => {
 		discord("Video Maker");
 		const { IS_WIDE } = DB.select();
 		let flashvars = {
